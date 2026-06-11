@@ -1,5 +1,29 @@
-<htnml>
-  <body>
-    Hello!
-  </body>
-</htnml>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Hello Event Add-in</title>
+
+  <!-- Office.js -->
+  <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+
+  <!-- メインスクリプト -->
+  <script src="taskpane.js"></script>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Hello Event Add-in</h1>
+  <p>このタスクパネルは手動で開いたときに表示されます。</p>
+  <p>文書を開いたときの自動処理は <code>DocumentOpened</code> イベントで実行されます。</p>
+</body>
+</html>
